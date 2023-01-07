@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    background-color: #16171D;
+}
+
+ul {
+    display: flex;
+    padding: 1em 2em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    font-size: 2em;
+    color: white;
+    font-weight: 600;
+}
+
+.yellow {
+    color: #F5C249;
+}
+
+.menu {
+    height: 40px;
+}
+
+.hero,
+.hero-text {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    padding-top: 4em;
+}
+
+.hero img {
+    width: 80%;
+}
+
+h1 {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+h4 {
+    color: darkgray;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.wallet-btn {
+    margin-top: 1.2em;
+    padding: 0.8em 1.8em;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #F5C249;
+    color: black;
+    border: none;
+}
+
+.fiszki-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 8em;
+}
+
+.fiszka {
+    border: 2px solid #787A8D;
+    border-radius: 20px;
+    width: 80%;
+    margin-bottom: 5em;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+
+p {
+    color: darkgray;
+    text-align: center;
+    padding: 20px 30px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.fiszka {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fiszka img {
+    width: 100px;
+    margin: auto;
+}
+
+.transactions {
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.transactions-box {
+    background-color: #21242D;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em 1.5em;
+    border-radius: 10px;
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+.transactions-box input {
+    margin-bottom: 15px;
+}
+
+input {
+    border-radius: 10px;
+    background-color: #16171D;
+    padding: 1em;
+    color: #787A8D;
+    font-size: 0.7em;
+    font-weight: 500;
+    border: none;
+}
+
+
+.transactions-btn {
+    margin-top: 1.2em;
+    padding: 0.6em 1em;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #F5C249;
+    border: none;
+    color: black;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-top: 2px solid #21242D;
+    padding-top: 1em;
+}
+
+.footer li,
+a {
+    margin-bottom: 20px;
+}
+
+.social img {
+    width: 31px;
+    margin-left: 20px;
+}
+
+.copyrights {
+    font-size: 0.8em;
+    font-weight: 300;
+}
