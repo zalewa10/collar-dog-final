@@ -9,356 +9,220 @@ ul,
 li,
 a {
     text-decoration: none;
-    list-style: none;
+    list-style-type: none;
+    color: black;
 }
 
-html {
-    background-color: #16171D;
-}
-
-ul {
+.navbar {
     display: flex;
-    padding: 1em 2em;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: row;
+    background-color: rgb(18, 66, 239);
 }
 
-a {
-    font-size: 2em;
-    color: white;
-    font-weight: 600;
+.eclipse {
+    position: absolute;
+    float: right;
+    right: 0;
 }
 
-.yellow {
-    color: #fcc137;
+.logo {
+    float: left;
+    height: 1.4em;
+    margin-top: 20px;
+    margin-left: 1em;
 }
 
-.menu {
-    height: 40px;
+.hamburger-menu {
+    display: none;
+    float: right;
+    margin: auto;
 }
 
-.hero,
-.hero-text {
-    display: grid;
-    place-items: center;
-    align-content: center;
-    padding-top: 4em;
-}
-
-.hero img {
-    width: 70%;
+.hero {
+    background-color: rgb(18, 66, 239);
+    padding-top: 30px;
 }
 
 h1 {
-    color: white;
-    font-size: 2em;
     text-align: center;
-    width: 80%;
+    font-size: 2.2em;
+    font-weight: 700;
+    color: white;
+    padding: 0em 0.5em;
 }
 
 h4 {
-    color: darkgray;
-    font-size: 1em;
-    font-weight: 400;
+    color: white;
+    font-weight: 300;
     text-align: center;
-    padding-top: 1em;
+    padding: 1em 4em;
+    font-size: 0.8em;
 }
 
-.wallet-btn {
-    margin-top: 1.2em;
-    padding: 0.8em 1.8em;
-    font-size: 1.2em;
-    font-weight: 500;
-    text-align: center;
-    border-radius: 10px;
-    background-color: #F5C249;
-    color: black;
-    border: none;
+/* .hero video {
+    width: 100%;
+} */
+
+h3 {
+    margin-top: 10px;
 }
 
-.fiszki-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
-    margin-top: 8em;
-}
-
-.fiszka {
-    border: 2px solid #787A8D;
-    border-radius: 20px;
-    width: 80%;
-    margin-bottom: 5em;
+.hero-img {
+    display: grid;
+    place-items: center;
+    margin: auto;
+    width: 100%;
 }
 
 h2 {
-    color: white;
+    color: black;
     text-align: center;
-    font-size: 1.5em;
-    font-weight: 600;
+    font-size: 2em;
+    padding: 0.5em 0 1em 0;
 }
 
+.about {
+    background-color: rgb(244, 242, 239);
+    padding: 1em 2em;
+    justify-content: space-around;
+}
 
-p {
-    color: darkgray;
-    text-align: center;
-    padding: 20px 30px;
-    font-size: 1.2em;
+.about-section {
+    background-color: white;
+    text-align: left;
+    padding: 1em 2em;
+    border-radius: 10px;
+    border: 0.5px solid lightgray;
+    box-shadow: .5em .1em 2em rgba(5, 5, 5, 0.712);
     margin-bottom: 20px;
 }
 
-.fiszka {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.h4 {
+    color: black;
+    text-align: left;
+    padding: 0;
+    margin-top: 10px;
 }
 
-.fiszka img {
-    width: 100px;
-    margin: auto;
-}
-
-.transactions {
+.about-section img {
     display: grid;
     place-items: center;
-    align-content: center;
+    margin: auto;
+    width: 80%;
 }
 
-.transactions-box {
-    background-color: #21242D;
+
+button {
+    background-color: darkblue;
+    border-radius: 5px;
+    color: white;
+    padding: 0.6em 1.6em;
+    font-size: 1em;
+    border: 0;
+    margin-top: 20px;
+}
+
+.klienci {
+    position: relative;
+    text-align: center;
+    color: black;
+    padding: 2em 2em;
+}
+
+.klienci-img {
+    margin-top: 50px;
+}
+
+.klienci img {
     display: flex;
     flex-direction: column;
-    padding: 2.5em 1.5em;
-    border-radius: 10px;
-    width: 80%;
-    margin-bottom: 100px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: .5em .1em 2em rgba(5, 5, 5, 0.712);
+    margin-bottom: 20px;
 }
 
-.transactions-box input {
-    margin-bottom: 15px;
-    font-size: 0.8em;
-}
-
-input {
-    border-radius: 10px;
-    background-color: #16171D;
-    padding: 1em;
-    color: #787A8D;
-    font-size: 0.7em;
-    font-weight: 500;
-    border: none;
-}
-
-
-.transactions-btn {
-    margin-top: 1.2em;
-    padding: 0.6em 1em;
-    font-size: 1.2em;
-    font-weight: 500;
-    text-align: center;
-    border-radius: 10px;
-    background-color: #F5C249;
-    border: none;
+.h11 {
     color: black;
 }
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    border-top: 2px solid #21242D;
-    padding-top: 1em;
+.h33 {
+    color: black;
+    font-weight: 300;
+    font-size: 0.8em;
 }
 
-.footer li,
-a {
+.h111 {
+    color: black;
+    font-size: 2em;
+}
+
+.h444 {
+    color: black;
+    font-size: 0.8em;
+}
+
+.download {
+    position: relative;
+    padding: 1em 2em;
+}
+
+.download img {
+    display: grid;
+    place-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.apki {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-bottom: 20px;
 }
 
-.social img {
-    width: 31px;
-    margin-left: 20px;
+.apki img {
+    margin-top: 10px;
+    width: 40%;
 }
 
-.copyrights {
+.zakladki {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 1em 2em;
+}
+
+.footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
     font-size: 0.8em;
-    font-weight: 300;
+    padding: 1em 2em;
+    font-weight: 200;
 }
 
-.hero1 img {
-    display: grid;
-    width: 70%;
-    align-items: center;
-    place-items: center;
-    margin: auto;
-
+.footer p {
+    margin-bottom: 10px;
 }
 
-@media (min-width:1041px) {
-    html {
-        padding: 0;
-        margin: 0;
-    }
+.zakladki p {
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
 
-    .navbar ul {
-        font-size: 1em;
-        padding: 2em 5em;
-        text-align: left;
-    }
+.zakladki ul {
+    margin-bottom: 40px;
+}
 
-    .navbar a {
-        text-align: left;
-    }
-
-    .navbar img {
-        display: none;
-    }
-
-    .hero-section {
-        display: flex;
-        flex-direction: row-reverse;
-        margin: 5em 0;
-        justify-content: space-between;
-    }
-
-    .hero {
-        width: 50%;
-        margin: 0;
-        padding-top: 5em;
-        float: right;
-
-    }
-
-    .hero-text {
-        width: 50%;
-        font-size: 1.2em;
-        padding-left: 5em;
-    }
-
-    h1,
-    h4,
-    p {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        text-align: left;
-    }
-
-    .wallet-btn {
-        left: 0;
-        margin-right: auto;
-        padding: 0.6em 1.6em;
-    }
-
-    h1 {
-        margin-bottom: 20px;
-    }
-
-    h4 {
-        margin-bottom: 10px;
-    }
-
-    .fiszki-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        padding: 0 5em;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .fiszka {
-        padding: 2em 2em;
-        margin-left: 30px;
-        height: 300px;
-    }
-
-    .fiszka:nth-child(1) {
-        margin-left: 0;
-    }
-
-    .fiszka h2 {
-        font-size: 1.2em;
-        padding-top: 20px;
-        text-align: center;
-    }
-
-    .fiszka p {
-        font-size: 1em;
-        padding-top: 20px;
-        text-align: center;
-    }
-
-    .fiszka img {
-        width: 30%;
-    }
-
-    .hero1 {
-        float: left;
-        width: 50%;
-        margin-left: 3em;
-        margin-top: 40px;
-        max-width: 700px;
-    }
-
-    .transactions {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        align-self: center;
-        vertical-align: middle;
-        margin-bottom: 100px;
-    }
-
-    .transactions-box {
-        width: 50%;
-        float: right;
-        right: 0;
-        margin-right: 5em;
-        margin-bottom: 0;
-
-    }
-
-    .transactions-box input {
-        font-size: 1em;
-    }
-
-    .footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 1em 5em;
-
-    }
-
-    .footer li {
-        vertical-align: center;
-        margin: 0;
-    }
-
-    .copyrights {
-        float: right;
-        text-align: right;
-        width: auto;
-    }
-
-    .social {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: auto;
-        align-items: center;
-    }
-
-    .social img {
-        width: 50%;
-    }
-
-    .transactions-section {
-        margin: 2em 5em;
-    }
+.linia {
+    position: absolute;
+    width: 100%;
+    left: -2px;
 }
