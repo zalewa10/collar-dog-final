@@ -185,3 +185,8 @@ button:hover {
 p {
     cursor: default;
 }
+
+#response {
+    background-color: lightcoral;
+    font-size: 15px;
+}
