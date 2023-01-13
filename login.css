@@ -13,6 +13,10 @@ a {
     color: black;
 }
 
+body {
+    height: 100%;
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -27,53 +31,22 @@ a {
 
 .logo {
     float: left;
-    height: 1.4em;
+    height: 1.8em;
     margin: 1em 1em;
 }
 
 .hamburger-menu {
-    display: none;
+    display: flex;
     float: right;
     margin: auto;
-}
-
-h1 {
-    text-align: center;
-    font-size: 2.2em;
-    font-weight: 700;
-    color: white;
-    padding: 0em 0.5em;
-}
-
-h4 {
-    color: white;
-    font-weight: 300;
-    text-align: center;
-    padding: 1em 4em;
-    font-size: 0.8em;
-}
-
-/* .hero video {
-    width: 100%;
-} */
-
-h3 {
-    margin-top: 10px;
-}
-
-h2 {
-    color: black;
-    text-align: center;
-    font-size: 2em;
-    padding: 0.5em 0 1em 0;
 }
 
 .card {
     display: grid;
     place-items: center;
     margin: auto;
-    width: 190px;
-    height: 254px;
+    width: 80%;
+    height: 60vh;
     background: #F4F6FB;
     border: 1px solid white;
     box-shadow: 10px 10px 64px 0px rgba(180, 180, 207, 0.75);
@@ -81,7 +54,7 @@ h2 {
     -moz-box-shadow: 10px 10px 64px 0px rgba(208, 208, 231, 0.75);
     padding: 0.5em 1em;
     margin-top: 5em;
-    margin-bottom: 5em;
+    margin-bottom: 9em;
 }
 
 
@@ -94,12 +67,14 @@ h2 {
     color: rgb(18, 66, 239);
     margin-bottom: 20px;
     margin-right: 5px;
+    transform: scale(2);
 }
 
 .form_heading {
     padding-bottom: 20px;
     font-size: 21px;
     color: rgb(18, 66, 239);
+    font-size: 2.5em;
 }
 
 .field {
@@ -112,7 +87,8 @@ h2 {
     padding: 5px;
     width: 100%;
     color: #7a7ab3;
-    border: 1px solid #dadaf7
+    border: 1px solid #dadaf7;
+    font-size: 1.3em;
 }
 
 .input:focus-visible {
@@ -128,16 +104,18 @@ label {
     font-size: 14px;
     display: block;
     padding-bottom: 4px;
+    font-size: 1em;
 }
 
 button {
     background-color: rgb(18, 66, 239);
     margin-top: 10px;
-    font-size: 14px;
-    padding: 7px 12px;
+    font-size: 2em;
+    padding: 10px 20px;
     height: auto;
     font-weight: 500;
     color: white;
+    border-radius: 5px;
     border: none;
 }
 
@@ -145,13 +123,6 @@ button:hover {
     background-color: #0263ff;
 }
 
-
-.zakladki {
-    border-top: 1px solid lightgray;
-    text-align: left;
-    margin-bottom: 20px;
-    padding: 1em 2em;
-}
 
 .footer {
     background-color: darkblue;
@@ -166,22 +137,126 @@ button:hover {
     margin-bottom: 10px;
 }
 
-.zakladki p {
-    font-weight: 600;
-    margin-bottom: 20px;
-    font-size: 1.3em;
+#response {
+    background-color: lightcoral;
+    font-size: 15px;
 }
 
-.zakladki ul {
-    margin-bottom: 40px;
+#hamburger:hover {
+    transform: rotate(90deg);
 }
 
-.linia {
+.navbar-in {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    background: #1E5AFA;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    transform: translate(100%);
+    transition: all 0.3s linear;
+}
+
+#title-ham {
+    font-size: 1.25rem;
+    margin-right: 10px;
+    color: white;
+}
+
+.show-navbar {
+    transform: translate(0);
+}
+
+.close-btn {
+    font-size: 3vw;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    margin: 0 !important;
+    margin-left: 2px !important;
+    margin-top: 10px !important;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.close-btn:hover {
+    transform: rotate(90deg);
+}
+
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.navbar-toggle {
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.slider-menu>li>a {
+    color: white;
+    font-size: 3vw;
+    padding: 5px;
+}
+
+.slider-menu>li>a {
+    transition: all 0.3s ease-in-out;
+    padding-left: 10px;
+}
+
+.slider-menu>li {
+    margin-bottom: 10px;
+
+}
+
+.slider-menu>li>a:hover {
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 20px;
+}
+
+#hamburger {
     position: absolute;
-    width: 100%;
-    left: -2px;
+    float: right;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin-right: 20px;
+    background: none;
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
 }
 
-p {
-    cursor: default;
+.eclipse {
+    position: absolute;
+    float: right;
+    right: 0;
+}
+
+#hamburger {
+    font-size: 1.5em;
+}
+
+@media (min-width:1024px) {
+    .slider-menu>li>a {
+        font-size: 2vw;
+        padding: 5px;
+    }
+
+    .eclipse {
+        width: 250px;
+    }
+
+    .logo {
+        height: 3em;
+    }
 }

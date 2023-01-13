@@ -3,7 +3,97 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    cursor: default;
+}
+
+img,
+button {
+    cursor: pointer;
+}
+
+.kup {
+    display: none;
+}
+
+#hamburger:hover {
+    transform: rotate(90deg);
+}
+
+.navbar-in {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    background: #1E5AFA;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    transform: translate(100%);
+    transition: all 0.3s linear;
+}
+
+#title-ham {
+    font-size: 1.25rem;
+    margin-right: 10px;
+    color: white;
+}
+
+.show-navbar {
+    transform: translate(0);
+}
+
+.close-btn {
+    font-size: 3vw;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    margin: 0 !important;
+    margin-left: 2px !important;
+    margin-top: 10px !important;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.close-btn:hover {
+    transform: rotate(90deg);
+}
+
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.navbar-toggle {
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.slider-menu>li>a {
+    color: white;
+    font-size: 3vw;
+    padding: 5px;
+}
+
+.slider-menu>li>a {
+    transition: all 0.3s ease-in-out;
+    padding-left: 10px;
+}
+
+.slider-menu>li {
+    margin-bottom: 10px;
+
+}
+
+.slider-menu>li>a:hover {
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 20px;
 }
 
 ul,
@@ -14,15 +104,22 @@ a {
     color: black;
 }
 
-a {
-    cursor: pointer;
-}
-
-
 .navbar {
     display: flex;
     flex-direction: row;
     background-color: rgb(18, 66, 239);
+}
+
+#hamburger {
+    position: absolute;
+    float: right;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin-right: 20px;
+    background: none;
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
 }
 
 .eclipse {
@@ -33,14 +130,14 @@ a {
 
 .logo {
     float: left;
-    height: 1.4em;
-    margin-top: 20px;
+    height: 2em;
+    margin-top: 28px;
     margin-left: 1em;
 }
 
 .hamburger-menu {
-    display: none;
-    float: right;
+    display: flex;
+    flex-direction: column;
     margin: auto;
 }
 
@@ -233,4 +330,228 @@ button {
     position: absolute;
     width: 100%;
     left: -2px;
+}
+
+@media (min-width:1024px) {
+    html {
+        cursor: default;
+    }
+
+    .slider-menu>li>a {
+        font-size: 2vw;
+        padding: 5px;
+    }
+
+
+    .eclipse {
+        width: 250px;
+    }
+
+    .logo {
+        height: 3em;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero-text {
+        float: left;
+        width: 70%;
+        align-items: center;
+        align-content: center;
+        left: 0;
+    }
+
+    h1 {
+        margin-top: 50px;
+        padding: 0.5em 1.3em;
+        font-size: 3em;
+        text-align: left;
+    }
+
+    h4 {
+        font-size: 1em;
+        text-align: left;
+        width: 85%;
+    }
+
+    .hero-img {
+        display: flex;
+        float: right;
+        right: 0;
+        margin: 0;
+        margin-top: 150px;
+        margin-right: 2.8em;
+        height: 30%;
+    }
+
+    .kup {
+        display: grid;
+        margin-left: 2.8em;
+        margin-bottom: 30px;
+        background-color: rgb(255, 238, 0);
+        color: black;
+        font-weight: 600;
+        font-size: 1.4em;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 3em 34px;
+        background-color: white;
+
+    }
+
+    h2 {
+        font-size: 4em;
+        padding: 0;
+        margin: 20px 0;
+    }
+
+    .about-section {
+        justify-content: space-between;
+        margin: 0 20px;
+        box-shadow: 10px 10px 20px lightgray;
+    }
+
+    .about-section h3 {
+        font-size: 1.8em;
+        text-align: left;
+    }
+
+    .about-section h4 {
+        font-size: 1em;
+        font-weight: 300;
+    }
+
+    .about-section button {
+        font-size: 1.2em;
+        background-color: rgb(18, 66, 239);
+        color: white;
+        font-weight: 500;
+        padding: .5em 1em;
+    }
+
+    .klienci {
+        padding: 0 2.3em 5em 2.3em;
+        width: 100%;
+        background-color: rgb(255, 238, 0);
+    }
+
+    .h11 {
+        text-align: center;
+        font-size: 4em;
+        font-weight: 800;
+        padding-bottom: 0.5em;
+
+    }
+
+    .h33 {
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 400;
+        padding: 0 10em;
+        margin-bottom: 2em;
+    }
+
+    .klienci-img {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: center;
+        place-items: center;
+        width: 90%;
+    }
+
+    .klienci-img img {
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        margin-left: 30px;
+    }
+
+    .linia {
+        display: none;
+    }
+
+    .download {
+        display: flex;
+        flex-direction: row;
+        padding: 5em 4em;
+    }
+
+    .download img {
+        float: left;
+        width: 40%;
+        margin-right: 60px;
+    }
+
+    .download-text {
+        width: 100%;
+        margin-top: 80px;
+        margin-left: 50px;
+    }
+
+    .h111 {
+        margin: 0;
+        padding: 0;
+        font-size: 4em;
+        text-align: left;
+    }
+
+    .h444 {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        margin-top: 50px;
+        font-size: 1.5em;
+    }
+
+    .apki {
+        margin-top: 50px;
+        display: row;
+        width: 80%;
+    }
+
+    .zakladki {
+        display: flex;
+        width: 100%;
+        padding: 2em 5em;
+    }
+
+    .lewo {
+        float: left;
+        margin-right: 100px;
+    }
+
+    .prawo {
+        float: left;
+    }
+
+    .zakladki p {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    .zakladki a {
+        font-size: 1.2em;
+    }
+
+    .footer p {
+        margin-bottom: 0;
+        font-size: 1.5em;
+    }
+
+    .slider-menu>li>a {
+        padding-left: 70px;
+    }
 }
