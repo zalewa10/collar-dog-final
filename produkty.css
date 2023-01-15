@@ -41,72 +41,6 @@ body {
     margin: auto;
 }
 
-.card {
-    display: grid;
-    place-items: center;
-    margin: auto;
-    width: 80%;
-    height: 60vh;
-    background: #F4F6FB;
-    border: 1px solid white;
-    box-shadow: 10px 10px 64px 0px rgba(180, 180, 207, 0.75);
-    -webkit-box-shadow: 10px 10px 64px 0px rgba(186, 186, 202, 0.75);
-    -moz-box-shadow: 10px 10px 64px 0px rgba(208, 208, 231, 0.75);
-    padding: 0.5em 1em;
-    margin-top: 5em;
-    margin-bottom: 9em;
-}
-
-
-.card_header {
-    display: flex;
-    align-items: center;
-}
-
-.card svg {
-    color: rgb(18, 66, 239);
-    margin-bottom: 20px;
-    margin-right: 5px;
-    transform: scale(2);
-}
-
-.form_heading {
-    padding-bottom: 20px;
-    font-size: 21px;
-    color: rgb(18, 66, 239);
-    font-size: 2.5em;
-}
-
-.field {
-    padding-bottom: 10px;
-}
-
-.input {
-    border-radius: 5px;
-    background-color: #e9e9f7;
-    padding: 5px;
-    width: 100%;
-    color: #7a7ab3;
-    border: 1px solid #dadaf7;
-    font-size: 1.3em;
-}
-
-.input:focus-visible {
-    outline: 1px solid #0263ff;
-}
-
-.input::placeholder {
-    color: #bcbcdf;
-}
-
-label {
-    color: #B2BAC8;
-    font-size: 14px;
-    display: block;
-    padding-bottom: 4px;
-    font-size: 1em;
-}
-
 button {
     background-color: rgb(18, 66, 239);
     margin-top: 10px;
@@ -118,11 +52,6 @@ button {
     border-radius: 5px;
     border: none;
 }
-
-button:hover {
-    background-color: #0263ff;
-}
-
 
 .footer {
     background-color: darkblue;
@@ -246,6 +175,109 @@ button:hover {
     font-size: 1.5em;
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 190px;
+    height: 400px;
+    padding: 20px;
+    background: #f5f5f5;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+}
+
+.card-img {
+    background-color: white;
+    width: 220px;
+    height: 100px;
+    border-radius: .5rem;
+    transition: .3s ease;
+    padding: 10px;
+    box-shadow: 4px 4px .5em rgb(18, 66, 239);
+}
+
+.card-img img {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.card-info {
+    padding-top: 10%;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.text-title {
+    font-weight: 900;
+    font-size: 1.5em;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.text-body {
+    font-size: .9em;
+    padding-bottom: 10px;
+    margin: 30px 0;
+}
+
+.card-button {
+    border: 1px solid #252525;
+    display: flex;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+}
+
+
+.card-button:hover {
+    border: 1px solid #0da827;
+    background-color: #0da827;
+}
+
+.fiszka {
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    margin: 3em auto;
+}
+
+.card {
+    width: 100%;
+}
+
+
+.wysylka {
+    background-color: #252525;
+    color: white;
+    padding: 2em 3em;
+}
+
+.wysylka p {
+    font-weight: 100;
+    line-height: 26px;
+}
+
+
 @media (min-width:1024px) {
     #hamburger {
         font-size: 2rem;
@@ -273,4 +305,9 @@ button:hover {
     .logo {
         height: 3em;
     }
+
+    .container {
+        padding: 3em 3em 10em 3em;
+    }
+
 }
