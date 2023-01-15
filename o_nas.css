@@ -35,77 +35,6 @@ body {
     margin: 1em 1em;
 }
 
-.hamburger-menu {
-    display: flex;
-    float: right;
-    margin: auto;
-}
-
-.card {
-    display: grid;
-    place-items: center;
-    margin: auto;
-    width: 80%;
-    height: 60vh;
-    background: #F4F6FB;
-    border: 1px solid white;
-    box-shadow: 10px 10px 64px 0px rgba(180, 180, 207, 0.75);
-    -webkit-box-shadow: 10px 10px 64px 0px rgba(186, 186, 202, 0.75);
-    -moz-box-shadow: 10px 10px 64px 0px rgba(208, 208, 231, 0.75);
-    padding: 0.5em 1em;
-    margin-top: 5em;
-    margin-bottom: 9em;
-}
-
-
-.card_header {
-    display: flex;
-    align-items: center;
-}
-
-.card svg {
-    color: rgb(18, 66, 239);
-    margin-bottom: 20px;
-    margin-right: 5px;
-    transform: scale(2);
-}
-
-.form_heading {
-    padding-bottom: 20px;
-    font-size: 21px;
-    color: rgb(18, 66, 239);
-    font-size: 2.5em;
-}
-
-.field {
-    padding-bottom: 10px;
-}
-
-.input {
-    border-radius: 5px;
-    background-color: #e9e9f7;
-    padding: 5px;
-    width: 100%;
-    color: #7a7ab3;
-    border: 1px solid #dadaf7;
-    font-size: 1.3em;
-}
-
-.input:focus-visible {
-    outline: 1px solid #0263ff;
-}
-
-.input::placeholder {
-    color: #bcbcdf;
-}
-
-label {
-    color: #B2BAC8;
-    font-size: 14px;
-    display: block;
-    padding-bottom: 4px;
-    font-size: 1em;
-}
 
 button {
     background-color: rgb(18, 66, 239);
@@ -246,6 +175,53 @@ button:hover {
     font-size: 1.5em;
 }
 
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    background-color: #1E5AFA;
+    color: white;
+}
+
+
+.right img {
+    display: grid;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 100px;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.sub {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.opis {
+    margin: 40px 0;
+    font-size: 1em;
+    font-weight: 400;
+}
+
 @media (min-width:1024px) {
     #hamburger {
         font-size: 2rem;
@@ -256,21 +232,66 @@ button:hover {
     .close-btn {
         padding: 0.6em 1.6em;
     }
-}
 
-.slider-menu>li>a {
-    font-size: 2vw;
-    padding: 5px;
-}
+    .slider-menu>li>a {
+        font-size: 2vw;
+        padding: 5px;
+    }
 
-.slider-menu>li>a {
-    padding-left: 70px;
-}
+    .slider-menu>li>a {
+        padding-left: 70px;
+    }
 
-.eclipse {
-    width: 250px;
-}
+    .eclipse {
+        width: 250px;
+    }
 
-.logo {
-    height: 3em;
+    .logo {
+        height: 3em;
+    }
+
+    .kontenery {
+        display: grid;
+        padding: 4em;
+        place-items: center;
+    }
+
+    .container,
+    .container2 {
+
+        flex-direction: row;
+        border-radius: 10px;
+        max-width: 1165px;
+        margin-bottom: 40px;
+    }
+
+    .left {
+        width: 50%;
+        margin-right: 20px;
+        height: 100%;
+    }
+
+    .right {
+        width: 50%;
+        margin-left: 10px;
+        place-items: center;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+    }
+
+    .container {
+        background-color: rgb(245, 240, 240);
+    }
+
+    .opis {
+        margin-top: 2em;
+        margin-bottom: 0;
+        bottom: 2em;
+    }
+
+    .right img {
+        margin-bottom: 0;
+    }
 }
