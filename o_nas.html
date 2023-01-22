@@ -28,8 +28,8 @@
         <ul class="slider-menu">
             <li><a href="login.html">Zaloguj się</a></li>
             <li><a href="o_nas.html">O nas</a></li>
-            <li><a href="koszyk.html">Koszyk</a></li>
-            <li><a href="produkty.html">Nasze Produkty</a></li>
+           
+            <li><a class="niezalogowany-koszyk" href="produkty.html">Nasze Produkty</a></li>
         </ul>
     </div>
     <div class="kontenery">
@@ -37,11 +37,7 @@
             <div class="left">
                 <p class="head">Innowacyjne Rozwiązania</p>
                 <p class="sub">Fabryka CollarDog </p>
-                <p class="opis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit consequatur voluptates
-                    aperiam tempore deleniti itaque, maxime explicabo eum autem quia aliquid aut amet debitis voluptate
-                    assumenda fugiat nam ipsa animi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure,
-                    magni
-                    ex.</p>
+                <p class="opis">CollarDog oferuje inteligentne obroże dla psów z GPS i technologią komórkową do śledzenia lokalizacji zwierzaka, z czujnikami do monitorowania poziomu aktywności oraz z opcją tworzenia granic wirtualnych i komunikacją zdalną z psem. Dzięki aplikacji na smartfona, właściciele mogą otrzymywać powiadomienia i alerty, gdy pies wychodzi poza granice. Innowacyjna technologia CollarDog pozwala na śledzenie i monitorowanie psa w czasie rzeczywistym.</p>
             </div>
             <div class="right">
                 <img src="assets/fabryka.jpg" alt="">
@@ -51,11 +47,8 @@
             <div class="left">
                 <p class="head">Wytrzymała Bateria</p>
                 <p class="sub">Dział Innowacyjnych Technologii</p>
-                <p class="opis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit consequatur voluptates
-                    aperiam tempore deleniti itaque, maxime explicabo eum autem quia aliquid aut amet debitis voluptate
-                    assumenda fugiat nam ipsa animi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure,
-                    magni
-                    ex.</p>
+                <p class="opis">Jedną z najważniejszych cech obroży CollarDog jest ich długa żywotność baterii. Firma poświęciła dużo wysiłku na projektowanie obroży by były jak najbardziej energooszczędne, przy jednoczesnym zachowaniu szerokiego zakresu funkcji. Jeden naładunek pozwala na kilka tygodni użytkowania, w zależności od użytkowania. To szczególnie przydatne dla właścicieli zwierząt, którzy mogą martwić się o brak baterii podczas długiej wycieczki lub wyprawy z psem.
+                    Urządzenie posiada również wskaźnik niskiego poziomu baterii, który informuje właściciela o konieczności jej naładowania. Obroża posiada również port USB do łatwego ładowania.</p>
             </div>
             <div class="right">
                 <img src="assets/bateria.jpg" alt="">
@@ -65,11 +58,7 @@
             <div class="left">
                 <p class="head">Dokładna Geolokalizacja</p>
                 <p class="sub">Cellular Technology</p>
-                <p class="opis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit consequatur voluptates
-                    aperiam tempore deleniti itaque, maxime explicabo eum autem quia aliquid aut amet debitis voluptate
-                    assumenda fugiat nam ipsa animi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure,
-                    magni
-                    ex.</p>
+                <p class="opis">Precyzyjna geolokalizacja to jedna z głównych funkcji obroży CollarDog. Dzięki połączeniu GPS i sieci komórkowych, właściciele mogą śledzić swojego psa z dużą dokładnością, nawet w trudno dostępnych obszarach. Dane geolokalizacyjne są przesyłane do aplikacji na smartfona w czasie rzeczywistym, dając właścicielom szczegółową i aktualną mapę położenia psa. </p>
             </div>
             <div class="right">
                 <img src="assets/gps.png" alt="">
@@ -79,11 +68,7 @@
             <div class="left">
                 <p class="head">Zdrowie Twojego Psa</p>
                 <p class="sub">Psi Eksperci</p>
-                <p class="opis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit consequatur voluptates
-                    aperiam tempore deleniti itaque, maxime explicabo eum autem quia aliquid aut amet debitis voluptate
-                    assumenda fugiat nam ipsa animi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure,
-                    magni
-                    ex.</p>
+                <p class="opis">Obroże CollarDog mają funkcję monitorowania zdrowia, która pozwala właścicielom zwierząt na śledzenie poziomu aktywności swojego psa, dostarczając cennych informacji o ogólnym stanie zdrowia i dobrego samopoczucia swojego zwierzęcia.</p>
             </div>
             <div class="right">
                 <img src="assets/zdrowie.jpg" alt="">
@@ -96,7 +81,14 @@
             Strona wykonana przez Krzysztofa i Tymoteusza</p>
     </div>
     <script src="script.js"></script>
+    <script>
+        koszykLogin = document.querySelector('.niezalogowany-koszyk')
+        koszykLogin.addEventListener('click', (e) => {
+            e.preventDefault()
+            alert('Nie jesteś zalogowany.\n\nProsimy o zalogowanie się w zakładce "Zaloguj się"')
+        })
 
+    </script>
 </body>
 
 </html>

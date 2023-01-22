@@ -1,3 +1,42 @@
+.dane {
+    width: 70vw;
+    height: 80vh;
+    padding: 20px;
+    background: #f5f5f5;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+    min-height: 700px;
+    padding-left: 50px;
+}
+
+.fiszka-konto {
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    margin: 3em auto;
+}
+
+.imie-nazwisko {
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.dane-reszta>p {
+    padding: 5px;
+}
+
+.dane-reszta>p>a {
+    text-decoration: underline;
+    color: navy;
+}
+
+.usun-niewidzialne {
+    display: none;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -35,11 +74,6 @@ body {
     margin: 1em 1em;
 }
 
-.hamburger-menu {
-    display: flex;
-    float: right;
-    margin: auto;
-}
 
 button {
     background-color: rgb(18, 66, 239);
@@ -52,6 +86,11 @@ button {
     border-radius: 5px;
     border: none;
 }
+
+button:hover {
+    background-color: #0263ff;
+}
+
 
 .footer {
     background-color: darkblue;
@@ -175,108 +214,52 @@ button {
     font-size: 1.5em;
 }
 
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
 .container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 2em;
 }
 
-.card {
-    width: 190px;
-    height: 400px;
-    padding: 20px;
-    background: #f5f5f5;
-    overflow: visible;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    border-radius: 10px;
-}
-
-.card-img {
-    background-color: white;
-    width: 220px;
-    height: 100px;
-    border-radius: .5rem;
-    transition: .3s ease;
-    padding: 10px;
-    box-shadow: 4px 4px .5em rgb(18, 66, 239);
-}
-
-.card-img img {
-    margin-top: 10px;
-    width: 100%;
-}
-
-.card-info {
-    padding-top: 10%;
-}
-
-svg {
-    width: 20px;
-    height: 20px;
-}
-
-.card-footer {
-    width: 100%;
+.container2 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border-top: 1px solid #ddd;
-}
-
-.text-title {
-    font-weight: 900;
-    font-size: 1.5em;
-    line-height: 1.5;
-    text-align: left;
-}
-
-.text-body {
-    font-size: .9em;
-    padding-bottom: 10px;
-    margin: 30px 0;
-}
-
-.card-button {
-    border: 1px solid #252525;
-    display: flex;
-    padding: .3em;
-    cursor: pointer;
-    border-radius: 50px;
-    transition: .3s ease-in-out;
-}
-
-
-.card-button:hover {
-    border: 1px solid #0da827;
-    background-color: #0da827;
-}
-
-.fiszka {
-    display: grid;
-    justify-content: center;
-    place-items: center;
-    margin: 3em auto;
-}
-
-.card {
-    width: 100%;
-}
-
-
-.wysylka {
-    background-color: #252525;
+    flex-direction: column;
+    padding: 2em;
+    background-color: #1E5AFA;
     color: white;
-    padding: 2em 3em;
 }
 
-.wysylka p {
-    font-weight: 100;
-    line-height: 26px;
+
+.right img {
+    display: grid;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 100px;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.head {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.sub {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.opis {
+    margin: 40px 0;
+    font-size: 1em;
+    font-weight: 400;
+}
 
 @media (min-width:1024px) {
     #hamburger {
@@ -306,36 +289,48 @@ svg {
         height: 3em;
     }
 
-    .container {
-        padding: 3em 3em 10em 3em;
+    .kontenery {
+        display: grid;
+        padding: 4em;
+        place-items: center;
     }
 
-}
+    .container,
+    .container2 {
 
+        flex-direction: row;
+        border-radius: 10px;
+        max-width: 1165px;
+        margin-bottom: 40px;
+    }
 
-.koszyk>button {
-    width: 20vw;
-    min-width: 200px;
-    font-size: 15px;
-}
+    .left {
+        width: 50%;
+        margin-right: 20px;
+        height: 100%;
+    }
 
-#minus-lite {
-    width: 150px;
-    font-size: 12px;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
+    .right {
+        width: 50%;
+        margin-left: 10px;
+        place-items: center;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+    }
 
-.koszyk {
-    display: none;
-}
+    .container {
+        background-color: rgb(245, 240, 240);
+    }
 
-.koszyk-widoczny {
-    display: block;
-    width: 90%;
-    padding: 20px;
-    background: #f5f5f5;
-    overflow: visible;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    border-radius: 10px;
+    .opis {
+        margin-top: 2em;
+        margin-bottom: 0;
+        bottom: 2em;
+    }
+
+    .right img {
+        margin-bottom: 0;
+    }
 }
