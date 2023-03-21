@@ -14,6 +14,36 @@
 </head>
 
 <body>
+    <!-- Messenger Wtyczka czatu Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Wtyczka czatu code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "119440157756491");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v16.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div class="navbar">
         <img class="eclipse" src="assets/Ellipse 753.png" alt="">
         <a href="index.html"><img class="logo" href="index.html" src="assets/logo-biale.png" alt=""></a>
@@ -137,37 +167,7 @@
         <p>Copyright &#169; 2023 all rights reserved CollarDog
             Strona wykonana przez Krzysztofa i Tymoteusza</p>
     </div>
-    <script src="script.js"></script>
-<!-- Messenger Wtyczka czatu Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Wtyczka czatu code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "119440157756491");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v16.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
+    
 </body>
 
 </html>
