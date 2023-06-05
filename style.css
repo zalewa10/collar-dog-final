@@ -5,18 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
-img,
-button {
-    cursor: pointer;
-}
-
 .kup {
     display: none;
 }
 
-#hamburger:hover {
-    transform: rotate(90deg);
-}
 
 .navbar-in {
     position: fixed;
@@ -93,7 +85,8 @@ button {
     color: black;
     border-radius: 10px;
     background-color: white;
-    margin-left: 20px;
+    margin-left: 100px;
+    padding-left: 0px;
 }
 
 ul,
@@ -332,17 +325,7 @@ button {
     left: -2px;
 }
 
-@media (min-width:1024px) {
-    html {
-        cursor: default;
-    }
-
-    .slider-menu>li>a {
-        font-size: 2vw;
-        padding: 5px;
-    }
-
-
+@media (min-width:1180px) {
     .eclipse {
         width: 250px;
     }
